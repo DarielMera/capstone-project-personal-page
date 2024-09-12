@@ -54,7 +54,7 @@ h1 {
 	grid-template-rows: repeat(8, auto);
 	grid-template-columns: 1fr;
 	height: 100%;
-	width: 100vw;
+	width: 100%;
 }
 
 #menu {
@@ -234,6 +234,7 @@ section#resume div #download:hover {
 	height: auto;
 	padding: 1em 0;
 	margin-top: 1em;
+	width: 100%;
 }
 
 #project-title-section {
@@ -371,6 +372,12 @@ footer div#footer-container {
 }
 
 @media screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+		max-width: 100vw;
+		overflow-x: hidden;
+	}
+
 	#top-bar {
 		display: block;
 		height: 2em;
@@ -425,7 +432,12 @@ footer div#footer-container {
 	section #project-presentation-container {
 		flex-direction: column;
 		align-items: center;
-		width: 100%;
+		max-width: 100vw;
+	}
+
+	#project-container img,
+	#presentation-container iframe {
+		width: 90vw;
 	}
 
 	#project-liveDemo-link,
