@@ -247,17 +247,38 @@ section#resume div #download:hover {
 #project-presentation-container {
 	display: flex;
 	text-align: center;
-	justify-content: center;
+	justify-content: flex-start;
 	align-content: center;
 	gap: 4em;
+	overflow-x: scroll;
+	padding: 50px 100px;
 }
 
-#project-container,
-#presentation-container {
+section.frame-and-description-container {
+display: flex;
+flex-direction: column;
+}
+
+section p.project-description {
+font-family: system-ui;
+font-weight: 100;
+font-size: medium;
+text-align: justify;
+padding: 5px;
+line-height: 1.2;
+margin-top: 10px;
+}
+
+.project-frame {
 	box-shadow: -9px 7px 9px -4px #000000;
 }
 
-#project-container:hover,
+.project-frame:hover {
+	scale: 1.1;
+	transition: scale 0.2s ease;
+}
+
+
 #presentation-container:hover {
 	scale: 1.1;
 	transition: scale 0.2s ease;
